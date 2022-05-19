@@ -1,0 +1,166 @@
+.header {
+    // Было расхождение в 3px
+    margin-top: 2.7rem;
+    display: flex;
+    justify-content: center;
+}
+.header__wrapper {
+    height: 16rem;
+    width: 158rem;
+    display: flex;
+    flex-direction: column;
+    // row-gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__workTime {
+    font-family: Raleway500;
+    height: 4.8rem;
+    width: 18.5rem;
+    margin-left: 10.3rem;
+    margin-right: 9.2rem;
+    white-space: nowrap;
+    line-height: 2.4rem;
+    position: relative;
+    top: -0.4rem;
+    left: -0.3rem;
+}
+.header__button_makeOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.button_makeOrder__title {
+    text-decoration: none;
+    color: black;
+    font-family: Raleway500;
+    font-size: 1.8rem;
+    border-bottom: 1px solid black;
+    height: 2.7rem;
+    position: relative;
+    top: 2px;
+    left: -3px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cubeInCircle {
+    padding: 1rem;
+    border: solid 0.7rem #e4e4e4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.8rem;
+    position: relative;
+    left: -4px;
+    top: -1px;
+}
+.contactPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.421rem;
+    width: 27.5421rem;
+    margin-left: 7.6rem;
+    margin-right: 3.1rem;
+}
+.phoneIcon {
+    position: relative;
+    left: -7px;
+}
+.phoneWithIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -2px;
+}
+.phoneWithIcons__phone {
+    font-family: Montserrat800;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    white-space: nowrap;
+    position: relative;
+    left: -3px;
+}
+.phoneWithIcons__icons {
+    margin-top: 0.6rem;
+    width: 12.552rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__button_makeCall {
+    width: 23.8rem;
+    height: 6.4rem;
+
+    background-color: #319f1c;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 5px #319f1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -3px;
+    top: -2px;
+    & > p {
+        font-family: Raleway500;
+        color: white;
+    }
+}
+
+.header__navigation {
+    width: 158rem;
+    height: 6.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // column-gap: 16.2rem;
+    // padding:0 25.8rem;
+
+    background: linear-gradient(
+        90deg,
+        rgba(246, 246, 246, 0) 1.47%,
+        rgba(163, 210, 155, 0.92) 7.25%,
+        #319f1c 14.68%,
+        #309e1b 50.68%,
+        #319f1c 84.33%,
+        rgba(147, 202, 137, 0.79) 91.68%,
+        rgba(246, 246, 246, 0) 99.05%
+    );
+}
+.navigation__linksBlock {
+    height: 1.9rem;
+    width: 104.4rem;
+    display: flex;
+    column-gap: 16.2rem;
+    align-items: center;
+}
+.navigation__item {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Raleway500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    white-space: nowrap;
+}
+.polygon {
+    width: 0.9rem;
+    height: 0.6rem;
+}
