@@ -1,15 +1,28 @@
-*,*::after,*::before{
+*,*::after,*::before,html,body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+   
 }
 html {
+ 
     /* 10px */
     font-size: 10px;
+    min-width: 192rem;
+
   }
   
   body {
     /* 16px */
     font-size: 1.6rem;
+    overflow-x: hidden;
+  }
+  a{
+    text-decoration: none;
   }
