@@ -1,6 +1,196 @@
-.slider{
+.slider {
     height: 93.6rem;
 }
-.description__title{
+.slider__background {
+    position: absolute;
+    top: 4.7rem;
+    left: -3.8rem;
+    z-index: -900;
+}
+.slider__houseImage {
+    position: absolute;
+    top: 4.7rem;
+    right: -1.7rem;
+    z-index: -900;
+}
+.cloud_top_left {
+    position: absolute;
+    top: 4rem;
+    right: -1.7rem;
+    z-index: -900;
+}
+.slider__content {
+    margin-left: 13.2rem;
+}
+.slider__description {
+    margin-top: 8.9rem;
+    height: 16rem;
+    width: 103.8rem;
+}
+.description__title {
+    position: relative;
+    left: 3px;
     font-family: Montserrat900;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+}
+.description__text {
+    margin-top: 2.3rem;
+    font-family: Raleway400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.form__Wrapper {
+    position: relative;
+    height: 27.4rem;
+    width: 77.4rem;
+    border-radius: 0.3rem;
+    background: #ffffff;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.25);
+    margin-top: 2.7rem;
+}
+.form__ruler {
+    position: absolute;
+    left: -13.2rem;
+    z-index: -900;
+}
+.orderForm__content {
+    padding-top: 2.7rem;
+    padding-left: 3.5rem;
+    position: relative;
+}
+.orderForm__title {
+    font-family: Montserrat900;
+    font-size: 3rem;
+    color: #319f1c;
+
+    line-height: 3.7rem;
+}
+.orderForm__description {
+    font-family: Raleway600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-top: 1.4rem;
+}
+.orderForm__securityInfo {
+    font-family: Raleway400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+.orderForm__gift {
+    position: absolute;
+    top: -3.4rem;
+    right: 5.5rem;
+    z-index: 100;
+}
+
+.orderForm__controls {
+    margin-top: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+.orderForm__select {
+    @extend .input;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+.input {
+    width: 34.2rem;
+    height: 4rem;
+    border: 1px solid #319f1c;
+    border-radius: 3px;
+    color: #595959;
+    font-family: Raleway400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+.orderForm__input_name {
+    @extend .input;
+    padding-left: 3.4rem;
+}
+.orderForm__input_phone {
+    @extend .input;
+    padding-left: 3.4rem;
+}
+.orderForm__btn_sent {
+    height: 4rem;
+    width: 34.2rem;
+    border-radius: 0.3rem;
+    background-color: #319f1c;
+    color: #ffffff;
+    font-family: Raleway600;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    box-shadow: 0px 4px 4px #64bc45;
+    cursor: pointer;
+    &:hover {
+        background-color: #329f1cc5;
+    }
+}
+.orderForm__securityInfo {
+    position: relative;
+    left: 41.6rem;
+    top: 1rem;
+}
+.padlock {
+    background-image: url(../images/icons/padlock.svg);
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.8rem;
+}
+.form__smallGift {
+    position: relative;
+    left: 12.9rem;
+    top: -1.6rem;
+    z-index: 10;
+}
+.backgroundImg {
+    position: absolute;
+    z-index: -1;
+}
+.slider__images {
+    position: relative;
+    width: 100%;
+}
+.cloud_bottom_left {
+    position: absolute;
+    left: 0;
+    top: -10.3rem;
+    z-index: -900;
+}
+.cloud_bottom_center {
+    position: absolute;
+    left: 40.1rem;
+    top: -9.2rem;
+    z-index: -900;
+}
+.cloud_bottom_right {
+    position: absolute;
+    right: 0;
+    top: -4.9rem;
+}
+.sidebar {
+    position: fixed;
+    top: 36.2rem;
+    right: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar__icon {
+    height: 6.4rem;
+    width: 8.7rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px 0px 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
