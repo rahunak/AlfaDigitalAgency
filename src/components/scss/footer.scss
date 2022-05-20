@@ -17,21 +17,27 @@
     width: 158.2rem;
     height: 18.6rem;
 }
-// .footer__feedUs{
-
-// }
-// .footer__links{
-
-// }
-.footer__subscribe {
-    width: 24rem;
+.footer__feedUs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -0.4rem;
+    left: 0.1rem;
 }
 .footer__BlokLinks {
     display: flex;
     flex-direction: column;
     row-gap: 2.1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer__logo {
+    position: relative;
+    top: -0.4rem;
+    left: 0.1rem;
 }
 .btn_makeACall {
+    margin-top: 4.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +49,38 @@
     font-family: Raleway500;
     line-height: 1.9rem;
 }
+.footer__links_1 {
+    position: relative;
+    left: 2.4rem;
+    top: -0.5rem;
+}
+.footer__links_2 {
+    position: relative;
+    left: -1rem;
+    top: -0.5rem;
+}
+.footer__subscribe {
+    width: 24rem;
+    position: relative;
+    left: 0.8rem;
+}
+.footer__subscribe_text {
+    font-family: Raleway400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+.footer__subscribe_text2 {
+    font-family: "Raleway400";
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    position: relative;
+    top: -.2rem;
+}
+.logoCOmpany {
+    position: relative;
+    top: -.6rem;
+    left: -.7rem;
+}
 .footer__link {
     color: #ffffff;
     text-decoration: none;
@@ -50,10 +88,11 @@
     line-height: 1.9rem;
 }
 .socialNetworks {
+    margin-top: 1.4rem;
+    margin-bottom: 3.4rem;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     column-gap: 2rem;
 }
-.logoCOmpany {
-    height: 6.1rem;
-    width: 24rem;
-}
+
