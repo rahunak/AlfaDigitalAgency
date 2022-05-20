@@ -51,7 +51,9 @@ function showPopap() {
 </div>
 `);
   document.querySelector('.modal').addEventListener('click', clickOutsideModal);
+  
   //   document.querySelector('.modal').addEventListener('click', hideModalWindow);
 }
 
 document.querySelector('#order3DmaketOfHouse').addEventListener('click', showPopap);
+document.querySelector('#make3Dorder').addEventListener('click', showPopap);
