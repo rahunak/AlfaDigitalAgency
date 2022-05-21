@@ -1,0 +1,93 @@
+.modal__content_excursion {
+    height: 46.2rem;
+    width: 63.5rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    opacity: 1;
+}
+.formBlock__title_excursion {
+    height: 5.8rem;
+    width: 50.2rem;
+    font-family: Montserrat900;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: #363130;
+    margin-top: 3rem;
+}
+.formBlock__subtitle_excursion {
+    height: 1.9rem;
+    width: 32.4rem;
+    position: relative;
+    left: 1.8rem;
+    font-family: Raleway400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+.orderForm__select_excursion {
+    height: 4rem;
+    width: 46.4rem;
+    border-radius: 3px;
+    border: 1px solid #319f1c;
+    padding-left: 3rem;
+    font-family: "Raleway400";
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #595959;
+}
+.makeCallForm_excursion {
+    margin-top: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.3rem;
+    position: relative;
+    left: -0.3rem;
+    top: -1px;
+}
+.securityInfo_excursion {
+    margin-top: 2rem;
+    font-family: Raleway400;
+    font-size: 1.2rem;
+    line-height: 14px;
+    position: relative;
+    left: 1.5rem;
+}
+.requireText_excursion {
+    align-self: flex-start;
+    position: relative;
+    left: 8.2rem;
+    top:1.9rem;
+    font-family: "Raleway400";
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+.input_excursion {
+    height: 4rem;
+    width: 46.4rem;
+    border-radius: 3px;
+    border: 1px solid #319f1c;
+    padding-left: 3.4rem;
+    font-family: "Raleway400";
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+.submitBtn_excursion {
+    height: 4rem;
+    width: 46.4rem;
+    margin-top: 0.5rem;
+    font-family: "Raleway600";
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #ffffff;
+    background-color: #319f1c;
+    box-shadow: 0px 4px 4px #64bc45;
+    border-radius: 3px;
+    text-align: center;
+}
