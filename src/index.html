@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
 <body>
     <!-- ----------- HEADER ----------  -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__wrapper">
             <div class="header__info">
                 <div class="logo">
@@ -24,7 +24,7 @@
                     <div class="cubeInCircle">
                         <img src="./components/images/icons/cube.svg" alt="">
                     </div>
-                    <a href="#" class="button_makeOrder__title">
+                    <a href="#" id="order3DmaketOfHouse" class="button_makeOrder__title">
                         Заказать ЗD-макет дома
                     </a>
 
@@ -44,8 +44,8 @@
 
                     </div>
                 </div>
-                <a href="#" class="makeACall">
-                    <div class="header__button_makeCall">
+                <a  href="#" class="makeACall" data-services="call">
+                    <div  class="header__button_makeCall">
                         <p>Заказать звонок</p>
                     </div>
                 </a>
@@ -72,8 +72,8 @@
 
     <section class="slider">
         <img class="slider__background" src="./components/images/background-slider.png" alt="">
-        <img src="./components/images/house-slider.png" alt="" class="slider__houseImage">
-        <img src="./components/images/topCloud.png" alt="" class="cloud_top_left">
+        <img class="slider__houseImage" src="./components/images/house-slider.png" alt="" >
+        <img class="cloud_top_left" src="./components/images/topCloud.png" alt="" >
         <div class="slider__wrapper">
 
             <div class="slider__content">
@@ -130,13 +130,13 @@
                 <a class="sidebar__calculator sidebar__icon" href="#">
                     <img src="./components/images/icons/Calculator.svg" alt="">
                 </a>
-                <a class="sidebar__view sidebar__icon" href="#">
+                <a id="sidebar__excursion" class="sidebar__view sidebar__icon" href="#">
                     <img src="./components/images/icons/Binoculars.svg" alt="">
                 </a>
-                <a class="sidebar__compass sidebar__icon" href="#">
+                <a id="make3Dorder" class="sidebar__compass sidebar__icon" href="#">
                     <img src="./components/images/icons/compass.svg" alt="">
                 </a>
-                <a class="sidebar__worker sidebar__icon" href="#">
+                <a id="sidebar__worker" class="sidebar__worker sidebar__icon" href="#">
                     <img src="./components/images/icons/worker.svg" alt="">
                 </a>
             </div>
@@ -147,7 +147,7 @@
 
     <!-- ----------- ARCHITECT ----------  -->
 
-    <main class="architect">
+    <main class="architect" id="architect">
         <img class="architect__background" src="./components/images/architect/bg.png" alt="">
 
         <div class="architect__wrapper">
@@ -197,7 +197,7 @@
                     alt="">
             </div>
 
-            <div class="projects">
+            <div class="projects" id="projects">
 
                 <div class="project">
                     <div class="project__image">
@@ -308,7 +308,7 @@
 
     <!-- ----------- COOPERATION ----------  -->
 
-    <section class="cooperation">
+    <section class="cooperation" id="cooperation">
         <div class="cooperation__wrapper">
             <img class="cooperation__decorImage_compass" src="./components/images/cooperation/compass.png" alt="">
             <img class="cooperation__decorImage_tree" src="./components/images/cooperation/tree.png" alt="">
@@ -339,30 +339,31 @@
 
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__feedUs footer__BlokLinks">
-                <div class="logo">
-                    <img src="./components/images/AlfaRepairBuilding-black.png" alt="">
+            <div class="footer__feedUs">
+                <div class="footer__logo">
+                    <img src="./components/images/footer/AlfaRepairBuilding.png" alt="">
                 </div>
-                <a href="#" class="btn_makeACall">    
+                <a href="#" class="btn_makeACall" data-services="call">    
                         Заказать звонок
                 </a>
             </div>
-            <div class="footer__links footer__BlokLinks">
-                <a class="footer__link" href="#">Главная</a>
-                <a class="footer__link" href="#">Каталог</a>
+            <div class="footer__links_1 footer__BlokLinks">
+                <a class="footer__link" href="#header">Главная</a>
+                <a class="footer__link" href="#projects">Каталог</a>
                 <a class="footer__link" href="#">Услуги</a>
                 <a class="footer__link" href="#">Расчёт стоимости</a>
-                <a class="footer__link" href="#">Консультация архитектора</a>
+                <a class="footer__link" href="#" data-services="consultation">Консультация архитектора</a>
             </div>
-            <div class="footer__links footer__BlokLinks">
-                <a class="footer__link" href="#">Экскурсия на объект</a>
-                <a class="footer__link" href="#">ЗD-макет дома</a>
+            <div class="footer__links_2 footer__BlokLinks">
+                <a id="excursion" class="footer__link"  href="#">Экскурсия на объект</a>
+                <a class="footer__link" href="#" data-services="3D-maket">ЗD-макет дома</a>
                 <a class="footer__link" href="#">О нас</a>
                 <a class="footer__link" href="#">Блог</a>
                 <a class="footer__link" href="#">Контакты</a>
             </div>
-            <div class="footer__subscribe footer__BlokLinks">
-                <p>Делимся крутыми проектами в соц.сетях. Подписывайтесь!</p>
+
+            <div class="footer__subscribe">
+                <p class="footer__subscribe_text">Делимся крутыми проектами в соц.сетях. Подписывайтесь!</p>
                 <div class="socialNetworks">
                     <a href="" class="vk">
                         <img src="./components/images/footer/vk.svg" alt="">
@@ -377,11 +378,12 @@
                         <img src="./components/images/footer/youtobe.svg" alt="">
                     </a>
                 </div>
-                <p>Разработка и продвижение сайта:</p>
+                <p class="footer__subscribe_text2">Разработка и продвижение сайта:</p>
 
                 <img class="logoCOmpany" src="./components/images/footer/AlfaDigital.png" alt="">
 
             </div>
+            
         </div>
     </footer>
 </body>

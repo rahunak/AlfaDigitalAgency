@@ -1,3 +1,6 @@
+.slider{
+    position: relative;
+}
 .slider__background {
     position: absolute;
     top: 4.7rem;
@@ -6,14 +9,14 @@
 }
 .slider__houseImage {
     position: absolute;
-    top: 4.7rem;
-    right: -1.7rem;
+    top: -22.9rem;
+    right: 0;
     z-index: -900;
 }
 .cloud_top_left {
     position: absolute;
-    top: 4rem;
-    right: -1.7rem;
+    top: -23.7rem;
+    right: 0;
     z-index: -900;
 }
 .slider__content {
@@ -175,14 +178,14 @@
 .sidebar {
     position: fixed;
     top: 36.2rem;
-    right: 3.8rem;//Вечно то мало то много
-    // right: 2.1rem;//Вечно то мало то много
+    // right: 3.8rem;//Вечно то мало то много
+    right: 2.1rem;//Вечно то мало то много
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
     justify-content: center;
     align-items: center;
-    z-index: 992;
+    z-index: 952;
 }
 .sidebar__icon {
     height: 6.4rem;

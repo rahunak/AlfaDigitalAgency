@@ -1,0 +1,83 @@
+.modal_thanks {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 994;
+    background: rgba(41, 41, 41, 0.692);
+    backdrop-filter: blur(6px);
+}
+.content_thanks {
+    position: relative;
+    height: 40.6rem;
+    width: 77.3rem;
+    background-color: white;
+    border-radius: 3px;
+    padding-right: 29.9rem;
+    padding-left: 5rem;
+    background-image: url(../../images/popap/ThanksHouse.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks__title {
+    font-family: "Montserrat900";
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    color: #319f1c;
+    margin-top: 5.4rem;
+}
+
+.thanks__subtitle {
+    width: 28.3rem;
+    height: 4.8rem;
+    font-family: "Montserrat800";
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #363636;
+    margin-top: 1.2rem; /* //Хотя по макету видно что больше */
+}
+
+.thanks__text {
+    width: 36.8rem;
+    height: 3.8rem;
+    font-family: "Raleway400";
+    line-height: 1.9rem;
+    color: #000000;
+    margin-top: 3.6rem;
+}
+
+.thanks__phone {
+    font-family: "Montserrat900";
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    color: #319f1c;
+    text-shadow: 0px 4px 4px #64bc45;
+    margin-top: 2.5rem;
+    margin-bottom: 2.7rem;
+}
+
+#clouseBtn_thanks {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    right: 2.4rem;
+    top: 1.4rem;
+    cursor: pointer;
+    z-index: 1000;
+    background-image: url(../../images/popap/clouseBtn.svg);
+}
+.icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.whatsapp {
+    background-image: url(../../images/icons/WhatsUP.svg);
+}
+.telegram {
+    background-image: url(../../images/icons/Telegram.svg);
+}
+.vider {
+    background-image: url(../../images/icons/Viber.svg);
+}
