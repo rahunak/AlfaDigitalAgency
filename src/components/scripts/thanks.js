@@ -1,6 +1,6 @@
 function hideModalWindow() {
   //   document.body.style.overflow = 'visible';
-  const modal = document.querySelector('.modal');
+  const modal = document.querySelector('.modal_thanks');
   modal.classList.add('hideModal_animation');
   modal.addEventListener('animationend', function removeAll() {
     document.body.style = '';
@@ -21,10 +21,11 @@ function clickOutsideModal(event) {
     hideModalWindow();
   }
 }
-function showPopap() {
+export default function showThanksPopap(event) {
+  event.preventDefault();
   //   document.body.style.overflow = 'hidden';
   document.body.insertAdjacentHTML('afterbegin', `
-  <div class="modal">
+  <div class="modal_thanks showModal_animation">
   <div class="modal__wrapper">
       <div class="content_thanks">
           <h2 class="thanks__title">Спасибо!</h2>
@@ -38,15 +39,11 @@ function showPopap() {
           <div class="icon telegram"></div>
           <div class="icon vider"></div>
           </div>
-          <div id="clouseBtn" class=""></div>
+          <div id="clouseBtn_thanks" class=""></div>
       </div>
   </div>
 </div>
     `);
-  document.querySelector('.modal').addEventListener('click', clickOutsideModal);
-
-  document.querySelector('#clouseBtn').addEventListener('click', hideModalWindow);
+  document.querySelector('.modal_thanks').addEventListener('click', clickOutsideModal);
+  document.querySelector('#clouseBtn_thanks').addEventListener('click', hideModalWindow);
 }
-
-document.querySelector('#makeACall').addEventListener('click', showPopap);
-// document.querySelector('#make3Dorder').addEventListener('click', showPopap);

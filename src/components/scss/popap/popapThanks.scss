@@ -1,3 +1,11 @@
+.modal_thanks {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 994;
+    background: rgba(41, 41, 41, 0.692);
+    backdrop-filter: blur(6px);
+}
 .content_thanks {
     position: relative;
     height: 40.6rem;
@@ -50,14 +58,14 @@
     margin-bottom: 2.7rem;
 }
 
-#clouseBtn{
+#clouseBtn_thanks {
     width: 1.2rem;
     height: 1.2rem;
     position: absolute;
     right: 2.4rem;
     top: 1.4rem;
     cursor: pointer;
-z-index: 1000;
+    z-index: 1000;
     background-image: url(../../images/popap/clouseBtn.svg);
 }
 .icon {
@@ -73,4 +81,3 @@ z-index: 1000;
 .vider {
     background-image: url(../../images/icons/Viber.svg);
 }
-
