@@ -46,7 +46,6 @@
     position: relative;
     top: 2px;
     left: -3px;
-
 }
 
 .cubeInCircle {
@@ -111,6 +110,9 @@
     position: relative;
     left: -3px;
     top: -2px;
+    font-family: "Raleway500";
+    line-height: 1.9rem;
+    color: #ffffff;
     & > p {
         font-family: Raleway500;
         color: white;

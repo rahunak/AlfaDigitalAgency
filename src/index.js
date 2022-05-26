@@ -13,7 +13,6 @@ import './components/scss/popap/popapMakeConsultation.scss';
 import './components/scss/popap/popapThanks.scss';
 import './components/scss/popap/popapWantToWatch.scss';
 
-import './components/scripts/makeConsultation';
-import './components/scripts/thanks';
-import './components/scripts/wantToWatchBuilding';
-import './components/scripts/makeOrder';
+import './components/scripts/eventListeners';
+
+import './components/scripts/showPopap';
