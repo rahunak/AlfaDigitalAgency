@@ -5,6 +5,9 @@
     z-index: 994;
     background: rgba(41, 41, 41, 0.692);
     backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content_thanks {
     position: relative;
