@@ -1,5 +1,6 @@
 .slider{
     position: relative;
+    background-image: url(../images/background-slider.png);
 }
 .slider__background {
     position: absolute;
@@ -14,6 +15,7 @@
     z-index: -900;
 }
 .cloud_top_left {
+    object-fit: contain;
     position: absolute;
     top: -23.7rem;
     right: 0;
@@ -26,6 +28,7 @@
     margin-top: 8.9rem;
     height: 16rem;
     width: 103.8rem;
+    max-width: 100%;
 }
 .description__title {
     position: relative;
@@ -157,19 +160,19 @@
     position: relative;
     width: 100%;
 }
-.cloud_bottom_left {
+.cloud_bottom_left {object-fit: contain;
     position: absolute;
     left: 0;
     top: -10.3rem;
     z-index: -900;
 }
-.cloud_bottom_center {
+.cloud_bottom_center {object-fit: contain;
     position: absolute;
     left: 40.1rem;
     top: -9.2rem;
     z-index: -900;
 }
-.cloud_bottom_right {
+.cloud_bottom_right {object-fit: contain;
     position: absolute;
     right: 0;
     top: -4.9rem;

@@ -1,51 +1,67 @@
 .header {
-    width: 192rem;
+    width: 100%;
+    max-width: 192rem;
     padding-top: 2.7rem;
     display: flex;
     justify-content: center;
 }
 .header__wrapper {
-    height: 16rem;
-    width: 158rem;
+    //height: 16rem;
+    width: 100%;
+    max-width: 158rem;
     display: flex;
     flex-direction: column;
-    // row-gap: 3rem;
     justify-content: space-between;
     align-items: center;
 }
 .header__info {
+    width: 100%;
+    max-width: 158rem;
     display: flex;
-    justify-content: center;
+    flex: 0 1 20%;
+    justify-content: space-between;
     align-items: center;
+    column-gap: 1rem;
+}
+.logo__wrapper{
+    position: relative;
+}
+.logo__image{
+    min-width: 6.4rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .header__workTime {
     font-family: Raleway500;
     height: 4.8rem;
-    width: 18.5rem;
-    margin-left: 10.3rem;
-    margin-right: 9.2rem;
-    white-space: nowrap;
-    line-height: 2.4rem;
+    max-width: 18.6rem;
     position: relative;
     top: -0.4rem;
     left: -0.3rem;
+    text-align: left;
+    line-height: 2.4rem;
+   
 }
 .header__button_makeOrder {
     display: flex;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
+
 }
 .button_makeOrder__title {
     text-decoration: none;
     color: black;
     font-family: Raleway500;
     font-size: 1.8rem;
-    border-bottom: 1px solid black;
-    height: 2.7rem;
     position: relative;
     top: 2px;
     left: -3px;
+    text-align: center;
+    &>p{
+        line-height: 2.7rem;
+        border-bottom: 1px solid black;
+    }
 }
 
 .cubeInCircle {
@@ -55,7 +71,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.8rem;
     position: relative;
     left: -4px;
     top: -1px;
@@ -66,8 +81,6 @@
     align-items: center;
     height: 6.421rem;
     width: 27.5421rem;
-    margin-left: 7.6rem;
-    margin-right: 3.1rem;
 }
 .phoneIcon {
     position: relative;
@@ -100,7 +113,6 @@
 .header__button_makeCall {
     width: 23.8rem;
     height: 6.4rem;
-
     background-color: #319f1c;
     border-radius: 0.6rem;
     box-shadow: 0px 4px 5px #319f1c;
@@ -113,6 +125,8 @@
     font-family: "Raleway500";
     line-height: 1.9rem;
     color: #ffffff;
+    text-align: center;
+    padding: 0 1rem;
     & > p {
         font-family: Raleway500;
         color: white;
@@ -120,8 +134,11 @@
 }
 
 .header__navigation {
-    width: 158rem;
+    width: 100%;
+    max-width: 82.2916em;
+    min-height: fit-content;
     height: 6.4rem;
+    max-height: 6.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,10 +155,14 @@
     );
 }
 .navigation__linksBlock {
-    height: 1.9rem;
-    width: 104.4rem;
+    min-height: 1.9rem;
+    // max-height: 1.9rem;
+    width: 100%;
+    // max-width: 104.4rem;
+    max-width: 66.07%;
     display: flex;
-    column-gap: 16.2rem;
+    gap:1rem;
+    justify-content: space-between;
     align-items: center;
 }
 .navigation__item {
@@ -159,4 +180,18 @@
 .polygon {
     width: 0.9rem;
     height: 0.6rem;
+}
+@media (max-width:945px) {
+    .header__info{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__navigation{
+        min-height: fit-content;
+        height: 6.4rem;
+    }
+    .navigation__linksBlock{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
