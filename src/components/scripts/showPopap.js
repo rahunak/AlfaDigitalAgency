@@ -142,7 +142,7 @@ function submitHandler(event) {
 }
 export default function showPopap(event) {
   event.preventDefault();
-  const modal = event.target.closest('li').dataset.services;
+  const modal = event.target.closest('a').dataset.services;
 
   switch (modal) {
     case 'thanks': {
